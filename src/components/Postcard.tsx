@@ -1,5 +1,11 @@
 import Link from 'next/link'
 
+interface Post {
+  id: number;
+  title: string;
+  body: string;
+}
+
 export default function PostCard({ post }: { post: any }) {
   return (
     <div className="border rounded-lg p-4 shadow-lg bg-gray-100 flex flex-col items-center">
